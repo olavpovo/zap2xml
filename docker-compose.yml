@@ -1,13 +1,13 @@
 version: '3'
 
 services:
-  sports:
+  zap2xml:
     image: shuaiscott/zap2xml:latest
     restart: always
     volumes:
-        - /xmltvdata:/data
+        - ~/Docker/mac/zap2xml/:/data
     environment:
-        - USERNAME=myemail@email.com
-        - PASSWORD=**password**
+        - USERNAME=olavpovo@gmail.com
+        - PASSWORD=Aa629415
         - OPT_ARGS=-I -D
-        - XMLTV_FILENAME=sports.xml
+        - XMLTV_FILENAME=iptv.xml
